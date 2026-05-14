@@ -46,7 +46,7 @@ export class PaymentsClient {
 
 	async listPayments(customerId: string): Promise<ListPaymentsResponse> {
 		const { data } = await this.http.get<ListPaymentsResponse>('/v1/payments', {
-			params: { customer_id: customerId },
+			params: { 'customer.id': customerId },
 		});
 		return data;
 	}
