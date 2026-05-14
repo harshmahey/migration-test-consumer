@@ -1,0 +1,20 @@
+{
+  "name": "migration-test-consumer",
+  "version": "1.0.0",
+  "description": "Sample consumer of the (fictional) PaymentsAPI used to validate ATA's consumer-migration system.",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "typecheck": "tsc --noEmit",
+    "lint": "tsc --noEmit",
+    "start": "node dist/index.js"
+  },
+  "dependencies": {
+    "axios": "^1.7.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.4.0",
+    "@types/node": "^20.0.0"
+  },
+  "license": "MIT"
+}
