@@ -16,7 +16,9 @@ async function main() {
 	const payment = await client.createPayment({
 		amount: 1999,
 		currency: 'usd',
-		customer_id: 'cust_abc123',
+		customer: {
+		id: 'cust_abc123',
+	},
 	});
 
 	const fetched = await client.getPayment(payment.id);
